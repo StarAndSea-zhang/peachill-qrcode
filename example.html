@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        #app{
+            width: 100vw;
+            height:100vh;
+        }
+        svg{
+            width: 128px;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div id="qrcode" class="test"></div>
+</div>
+
+<script src="qrcode.js"></script>
+<script>
+    //设置svg后，宽度失效
+    var qrcode = new QRCode(".test", {
+        text: "http://www.baidu.com",
+        width: 428,
+        height: 428,
+        colorDark : "#ff0000",
+        colorLight : "#ffffff",
+        centerIconSrc:'./test.jpg',
+        iconWidth:428,
+        iconHeight:285,
+        linearGradient:true,
+//        linearGradientDirection:'to right',
+//        linearGradientDirection:'to left',
+//        linearGradientDirection:'to top',
+//        linearGradientDirection:'to top left',
+//        linearGradientDirection:'to top right',
+//        linearGradientDirection:'to bottom',
+//        linearGradientDirection:'to bottom right',
+//        linearGradientDirection:'to bottom left',
+        linearGradientFrom:'#3CB371',
+        linearGradientTo:'#FFD700',
+        linearGradientMiddle:'#FF6347'
+       // useSVG:true,
+        //纠错等级
+        //correctLevel : QRCode.CorrectLevel.H
+    });
+	console.log(qrcode)
+</script>
+</body>
+</html>
