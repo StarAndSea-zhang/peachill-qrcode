@@ -13,7 +13,7 @@
 
 ```js
 <div id="app">
-    <div id="qrcode" class="test"></div>
+    <div class="test"></div>
 </div>
 <script src="qrcode.js"></script>
 <script>
@@ -46,6 +46,11 @@
 **Vue project**
 
 ~~~js
+	<div id="app">
+		<div id="b-download__qr"></div>
+	</div>
+	import QRCode from 'peachill-qrcode';
+	
     mounted() {
 		new QRCode("#b-download__qr", {
             text: this.url,

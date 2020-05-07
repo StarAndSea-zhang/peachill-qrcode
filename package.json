@@ -1,0 +1,19 @@
+{
+  "name": "peachill-qrcode",
+  "version": "1.0.0",
+  "description": "> Peach-qrcode is based on the implementation of QRCode, the original library has three functions of the extension",
+  "main": "qrcode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarAndSea-zhang/peachill-qrcode.git"
+  },
+  "author": "merryzoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarAndSea-zhang/peachill-qrcode/issues"
+  },
+  "homepage": "https://github.com/StarAndSea-zhang/peachill-qrcode#readme"
+}
